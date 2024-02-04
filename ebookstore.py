@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS books (
 conn.commit()
 conn.close()
 
-# Function to add a new book to the database
+# Function to add a new books to the database
 def add_book(title, author, quantity):
     conn = sqlite3.connect("bookstore.db")
     cursor = conn.cursor()
